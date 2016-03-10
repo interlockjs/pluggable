@@ -1,0 +1,52 @@
+{
+  "name": "pluggable",
+  "version": "0.1.0",
+  "description": "Write your application in functional style, and replace or transform any part.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js .",
+    "test": "mocha spec/run.js",
+    "build": "babel -d lib/ src/",
+    "watch": "watch 'npm run build' src/ -d",
+    "prepublish": "npm run check && npm run build",
+    "preversion": "npm run check && npm run build",
+    "check": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interlockjs/pluggable.git"
+  },
+  "keywords": [
+    "plugin",
+    "architecture",
+    "pluggable",
+    "transform",
+    "override",
+    "functional"
+  ],
+  "author": "Dale Bustad <dale@divmain.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interlockjs/pluggable/issues"
+  },
+  "homepage": "https://github.com/interlockjs/pluggable",
+  "dependencies": {
+    "bluebird": "^3.3.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.0",
+    "babel-eslint": "^5.0.0",
+    "babel-polyfill": "^6.6.1",
+    "babel-preset-nodejs-lts": "^1.2.1",
+    "chai": "^3.5.0",
+    "eslint": "2.2.0",
+    "@divmain/eslint-config-defaults": "^10.0.0",
+    "eslint-plugin-filenames": "^0.2.0",
+    "mocha": "^2.4.5",
+    "require-dir": "^0.3.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
+    "watch": "^0.17.1"
+  }
+}
