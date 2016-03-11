@@ -1,5 +1,7 @@
 # Pluggable
 
+[![Circle CI](https://circleci.com/gh/interlockjs/pluggable.svg?style=svg)](https://circleci.com/gh/interlockjs/pluggable)
+
 Write your framework or application code in a functional style, and Pluggable will allow consumers of your code to override or transform any part of execution.
 
 Async is fully supported via Promises, and a code analytics tool is made available to compile a dependency graph with metadata for all pluggables you've defined in your code.
