@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: v4.0.0
+
+test:
+  override:
+    - npm run check
+
+notify:
+  webhooks:
+    - url: https://webhooks.gitter.im/e/ec8fbe5ef76183d4a766
