@@ -1,6 +1,6 @@
 # Pluggable
 
-[![Circle CI](https://circleci.com/gh/interlockjs/pluggable.svg?style=svg)](https://circleci.com/gh/interlockjs/pluggable)
+[![Circle CI](https://circleci.com/gh/interlockjs/pluggable.svg?style=svg)](https://circleci.com/gh/interlockjs/pluggable) [![Code Climate](https://codeclimate.com/github/interlockjs/pluggable/badges/gpa.svg)](https://codeclimate.com/github/interlockjs/pluggable)
 
 Write your framework or application code in a functional style, and Pluggable will allow consumers of your code to override or transform any part of execution.
 
