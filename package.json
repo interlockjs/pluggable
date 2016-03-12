@@ -31,8 +31,12 @@
   },
   "homepage": "https://github.com/interlockjs/pluggable",
   "dependencies": {
+    "babel-traverse": "^6.7.3",
+    "babylon": "^6.7.0",
     "bluebird": "^3.3.4",
-    "comment-parser": "^0.4.0"
+    "comment-parser": "^0.4.0",
+    "glob": "^7.0.3",
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
