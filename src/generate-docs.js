@@ -22,7 +22,23 @@ function red (text) {
 function loadAst (fpath) {
   const rawSource = fs.readFileSync(fpath, "utf-8");
   return parse(rawSource, {
-    sourceType: "module"
+    sourceType: "module",
+    plugins: [
+      "jsx",
+      "flow",
+      "asyncFunctions",
+      "classConstructorCall",
+      "doExpressions",
+      "trailingFunctionCommas",
+      "objectRestSpread",
+      "decorators",
+      "classProperties",
+      "exportExtensions",
+      "exponentiationOperator",
+      "asyncGenerators",
+      "functionBind",
+      "functionSent"
+    ]
   });
 }
 
