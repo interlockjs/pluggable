@@ -282,7 +282,9 @@ function buildJson (pluggables) {
 
   function build (name) {
     const node = byFnName[name];
-    const children = node.edges.map(build);
+    const children = node.edges.map((edge, idx) =>
+      _.assign({ value: idx }, build(edge))
+    );
     const markdown = renderToMarkdown(node);
     const treeNode = { name, node, children, markdown };
     if (!children.length) { treeNode.size = 1; }
